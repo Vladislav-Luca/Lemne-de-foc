@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemne de Foc - Vânzare Lemne</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px; 
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #3c763d;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            max-width: 1000px; 
+            margin: auto; 
+            padding: 30px;
+            background: white;
+            border-radius: 8px;
+        }
+        .produse-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .produs {
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            margin: 20px;
+            width: 250px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .produs:hover {
+            border-color: #3c763d;
+            transform: translateY(-5px);
+        }
+        .produs img {
+            width: 150px; 
+            height: 150px; 
+            object-fit: cover; 
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .produs h3 {
+            font-size: 20px;
+            margin: 10px 0;
+            font-weight: normal;
+            transition: font-weight 0.3s ease;
+        }
+        .produs:hover h3 {
+            font-weight: bold;
+            text-align: center;
+        }
+        .produs p {
+            letter-spacing: 1px; 
+            transition: font-size 0.3s ease;
+        }
+        .produs:hover .pret {
+            font-size: 22px;
+        }
+        .pret {
+            font-size: 18px;
+            transition: font-size 0.3s ease;
+        }
+
+        .produs .lemn-de {
+            display: inline;
+        }
+        .produs:hover .lemn-de {
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #3c763d;
+            color: white;
+        }
+        
+        .informatii-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            flex-direction: row; /* Pe desktop, să fie unul lângă altul */
+        }
+        .informatii-container .text {
+            width: 50%;
+        }
+        .informatii-container img {
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            border-radius: 20px;
+            
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+
+
+        /* Media query pentru telefoane */
+        @media (max-width: 768px) {
+            .informatii-container img {
+                width: 80%; 
+                height: auto; 
+            }
+            
+            .informatii-container { 
+                flex-direction: column-reverse; 
+                text-align: center;
+            padding: 10px;
+            }
+
+            .informatii-container .text {
+                width: 100%;
+                margin-bottom: 20px; 
+            }
+
+            .informatii-container img {
+                width: 80%; 
+                height: auto; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lemne de Foc</h1>
+        <nav>
+            <ul>
+                <li><a href="#informatii">Informații Generale</a></li>
+                <li><a href="#produse">Produse</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="informatii">
+        <div class="informatii-container">
+            <div class="text">
+                <h3>Despre Lemnele de Foc</h3>
+                
+                <p>La Lemne de Foc, ne dedicăm furnizării celor mai bune produse pentru a face iarna mai plăcută și focurile de tabără mai frumoase. Oferim lemne de stejar, fag și brad, toate provenind din surse sustenabile și procesate corespunzător, pentru a asigura o ardere eficientă și de lungă durată.</p>
+                <p>Produsele noastre sunt ideale pentru sobe, șeminee, sau grătare, iar calitatea acestora este garantată. În plus, oferim o gamă variată de cantități, pentru a satisface nevoile fiecărui client. Livrăm rapid și eficient, cu opțiuni de livrare directă la domiciliu sau la punctele de colectare convenabile.</p>
+                <p>Indiferent dacă aveți nevoie de lemne pentru încălzire sau pentru un grătar în aer liber, suntem aici pentru a vă oferi cele mai bune soluții.</p>
+            </div>
+            <img src="https://lemnedefoctimis.ro/wp-content/uploads/2023/01/IMG-20221212-WA00183.jpg" alt="Lemn de foc" />
+        </div>
+    </section>
+
+    <section id="produse">
+        <h2>Produse Disponibile</h2>
+        <div class="produse-container">
+            <div class="produs">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnxFgXSQfJvnm-PcEHF3-BAI7o7Y_W5iIncw&s" alt="Lemn de stejar">
+                <div>
+                    <h3><span class="lemn-de">Lemn de</span> Stejar</h3>
+                    <p>Ideal pentru iarna, arde lent și produce căldură intensă. Perfect pentru sobe și șeminee.</p>
+                    <p class="pret">Preț: <strong>400 lei/mc</strong></p>
+                </div>
+            </div>
+            <div class="produs">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzZfzAqP83gmCeOD7VsovZlF1fxAbjI45ZGA&s" alt="Lemn de fag">
+                <div>
+                    <h3><span class="lemn-de">Lemn de</span> Fag</h3>
+                    <p>Arde bine și este perfect pentru gătit la grătar. Aroma sa face minuni pentru orice preparat.</p>
+                    <p class="pret">Preț: <strong>450 lei/mc</strong></p>
+                </div>
+            </div>
+            <div class="produs">
+                <img src="https://revistadinlemn.ro/wp-content/uploads/2017/01/sectiune-molid-fld.czu_.cz_.jpg?ezimgfmt=rs:335x337/rscb2/ng:webp/ngcb2" alt="Lemn de brad">
+                <div>
+                    <h3><span class="lemn-de">Lemn de</span> Brad</h3>
+                    <p>Ușor și ieftin, ideal pentru focuri de tabără. Creează o atmosferă plăcută în serile de vară.</p>
+                    <p class="pret">Preț: <strong>300 lei/mc</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Pentru comenzi și informații suplimentare, vă rugăm să ne contactați:</p>
+        <p>Email: <a href="mailto:contact@lemnededefoc.ro">contact@lemnededefoc.ro</a></p>
+        <p>
