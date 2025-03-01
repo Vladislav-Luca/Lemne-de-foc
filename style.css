@@ -1,3 +1,7 @@
+a {
+    border: none;      /* Elimină bordurile */
+    text-decoration: none;  /* Elimină sublinierea */
+}
  body {
             font-family: Arial, sans-serif;
             font-size: 18px; 
