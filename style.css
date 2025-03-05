@@ -125,6 +125,17 @@ a {
         }
 
 
+        .informatii-container stejar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            flex-direction: row;
+        }
         /* Media query pentru telefoane */
         @media (max-width: 768px) {
             .informatii-container img {
